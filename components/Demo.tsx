@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { EMAIL, OPS_EMAIL } from "@/lib/clips";
+import { OPS_EMAIL } from "@/lib/clips";
 
 // ---------------------------------------------------------------------------
 // Types mirroring public/demo/pose.json (extracted from the real HDF5 mocap).
@@ -688,10 +688,10 @@ export default function Demo() {
           </a>
         </div>
         <a
-          href={`mailto:${EMAIL}`}
+          href={`mailto:${OPS_EMAIL}`}
           className="mt-5 inline-block font-mono text-[12px] tracking-[0.06em] text-[var(--fg3)] underline-offset-4 hover:text-[var(--accent-300)] hover:underline"
         >
-          {EMAIL}
+          {OPS_EMAIL}
         </a>
       </section>
 
