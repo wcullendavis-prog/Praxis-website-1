@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { EMAIL } from "@/lib/clips";
+import { EMAIL, PARTNER_SITE } from "@/lib/clips";
 
 const clamp = (v: number) => Math.max(0, Math.min(1, v));
 const seg = (p: number, lo: number, hi: number) => clamp((p - lo) / (hi - lo));
@@ -243,10 +243,10 @@ export default function Cinematic() {
           </div>
           <div className="mt-7">
             <a
-              href={`mailto:${EMAIL}`}
+              href={PARTNER_SITE}
               className="inline-flex h-[52px] items-center gap-2 rounded-[2px] bg-[var(--accent-500)] px-7 font-sans text-[15px] font-medium text-[var(--bone-50)] transition-colors hover:bg-[var(--accent-600)]"
             >
-              Request access <span aria-hidden>→</span>
+              Learn more <span aria-hidden>→</span>
             </a>
           </div>
           <a
