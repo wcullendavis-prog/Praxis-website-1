@@ -1,12 +1,9 @@
-export const EMAIL = "founders@praxisrobotics.io";
-
 // The partner site: the operating detail this page gestures at, held behind a
 // shared access phrase. "Learn more" sends people there rather than opening a
 // blank email, so an interested partner can look before they write.
 export const PARTNER_SITE = "https://praxis-partners-swart.vercel.app/";
 
-// The /demo page is an operations-facing walkthrough of the capture rig, so
-// its enquiries go to the operations desk rather than the founders' inbox.
+// Every enquiry the public site produces goes to the operations desk.
 export const OPS_EMAIL = "operations@praxisrobotics.io";
 
 export const STATS = {

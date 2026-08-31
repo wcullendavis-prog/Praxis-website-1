@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { EMAIL, PARTNER_SITE } from "@/lib/clips";
+import { OPS_EMAIL, PARTNER_SITE } from "@/lib/clips";
 import CaptureScene from "@/components/CaptureScene";
 
 const clamp = (v: number) => Math.max(0, Math.min(1, v));
@@ -234,10 +234,10 @@ export default function Cinematic() {
             </a>
           </div>
           <a
-            href={`mailto:${EMAIL}`}
+            href={`mailto:${OPS_EMAIL}`}
             className="pointer-events-auto mt-3 font-mono text-[11px] tracking-[0.06em] text-[var(--fg-on-ink-2)] underline-offset-4 hover:text-[var(--accent-300)] hover:underline"
           >
-            {EMAIL}
+            {OPS_EMAIL}
           </a>
         </div>
       </div>

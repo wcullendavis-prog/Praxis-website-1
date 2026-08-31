@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { EMAIL, PARTNER_SITE } from "@/lib/clips";
+import { OPS_EMAIL, PARTNER_SITE } from "@/lib/clips";
 import CaptureScene from "@/components/CaptureScene";
 
 const EGO = [
@@ -105,10 +105,10 @@ export default function CinematicMobile() {
             Learn more <span aria-hidden>→</span>
           </a>
           <a
-            href={`mailto:${EMAIL}`}
+            href={`mailto:${OPS_EMAIL}`}
             className="mt-4 font-mono text-[12px] tracking-[0.06em] text-[var(--fg-on-ink-2)] underline-offset-4"
           >
-            {EMAIL}
+            {OPS_EMAIL}
           </a>
         </div>
       </section>
