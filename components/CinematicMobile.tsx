@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { EMAIL } from "@/lib/clips";
+import { EMAIL, PARTNER_SITE } from "@/lib/clips";
 import CaptureScene from "@/components/CaptureScene";
 
 const EGO = [
@@ -99,10 +99,10 @@ export default function CinematicMobile() {
             Praxis<span className="text-[var(--accent-500)]">.</span>
           </div>
           <a
-            href={`mailto:${EMAIL}`}
+            href={PARTNER_SITE}
             className="mt-6 inline-flex h-[52px] items-center gap-2 rounded-[2px] bg-[var(--accent-500)] px-7 font-sans text-[15px] font-medium text-[var(--bone-50)] transition-colors active:bg-[var(--accent-600)]"
           >
-            Request access <span aria-hidden>→</span>
+            Learn more <span aria-hidden>→</span>
           </a>
           <a
             href={`mailto:${EMAIL}`}

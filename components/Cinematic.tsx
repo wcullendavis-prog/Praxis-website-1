@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { EMAIL } from "@/lib/clips";
+import { EMAIL, PARTNER_SITE } from "@/lib/clips";
 import CaptureScene from "@/components/CaptureScene";
 
 const clamp = (v: number) => Math.max(0, Math.min(1, v));
@@ -227,10 +227,10 @@ export default function Cinematic() {
           </div>
           <div className="pointer-events-auto mt-5">
             <a
-              href={`mailto:${EMAIL}`}
+              href={PARTNER_SITE}
               className="inline-flex h-[48px] items-center gap-2 rounded-[2px] bg-[var(--accent-500)] px-6 font-sans text-[14px] font-medium text-[var(--bone-50)] transition-colors hover:bg-[var(--accent-600)]"
             >
-              Request access <span aria-hidden>→</span>
+              Learn more <span aria-hidden>→</span>
             </a>
           </div>
           <a

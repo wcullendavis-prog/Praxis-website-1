@@ -1,5 +1,10 @@
 export const EMAIL = "founders@praxisrobotics.io";
 
+// The partner site: the operating detail this page gestures at, held behind a
+// shared access phrase. "Learn more" sends people there rather than opening a
+// blank email, so an interested partner can look before they write.
+export const PARTNER_SITE = "https://praxis-partners-swart.vercel.app/";
+
 export const STATS = {
   continents: "5 continents",
   workers: "60,000 workers",
