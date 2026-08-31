@@ -5,6 +5,10 @@ export const EMAIL = "founders@praxisrobotics.io";
 // blank email, so an interested partner can look before they write.
 export const PARTNER_SITE = "https://praxis-partners-swart.vercel.app/";
 
+// The /demo page is an operations-facing walkthrough of the capture rig, so
+// its enquiries go to the operations desk rather than the founders' inbox.
+export const OPS_EMAIL = "operations@praxisrobotics.io";
+
 export const STATS = {
   continents: "5 continents",
   workers: "60,000 workers",

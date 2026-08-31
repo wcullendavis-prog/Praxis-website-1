@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { EMAIL } from "@/lib/clips";
+import { EMAIL, OPS_EMAIL } from "@/lib/clips";
 
 // ---------------------------------------------------------------------------
 // Types mirroring public/demo/pose.json (extracted from the real HDF5 mocap).
@@ -406,7 +406,7 @@ export default function Demo() {
             Multimodal capture · residential
           </span>
           <a
-            href={`mailto:${EMAIL}`}
+            href={`mailto:${OPS_EMAIL}`}
             className="rounded-[2px] bg-[var(--accent-500)] px-4 py-2 font-sans text-[13px] font-medium text-[#f6f2ea] transition-colors hover:bg-[var(--accent-600)]"
           >
             Request access
@@ -681,7 +681,7 @@ export default function Demo() {
         </p>
         <div className="mt-8">
           <a
-            href={`mailto:${EMAIL}`}
+            href={`mailto:${OPS_EMAIL}`}
             className="inline-flex h-[52px] items-center gap-2 rounded-[2px] bg-[var(--accent-500)] px-7 font-sans text-[15px] font-medium text-[#f6f2ea] transition-colors hover:bg-[var(--accent-600)]"
           >
             Request access <span aria-hidden>→</span>
